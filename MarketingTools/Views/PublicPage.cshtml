@@ -1,0 +1,7 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "PublicRoot.cshtml";
+}
+
+@Umbraco.Field("bodyContent")
+	@Umbraco.Field("companyShortCode", recursive: true)

@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "PublicRoot.cshtml";
+    var loginUrl = Umbraco.Content(Umbraco.Field("portalLogin", recursive: true).ToString()).Url;
+    var bgImage = Umbraco.Field("portalBackgroundImage", recursive: true);
+}
+<div id="login-full-wrapper" style="background: url(@bgImage) no-repeat center center; background-size: cover;">
+    <div class="container">
+        <div class="row m-top-30">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="main-box clearfix">
+                    <header class="main-box-header clearfix">
+                        <h2 class="gray">You have been logged out.</h2>
+                    </header>
+                    <div class="main-box-body clearfix">
+                        <a href="@loginUrl" class="btn btn-primary">
+                            Click Here to log back in.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>>
+

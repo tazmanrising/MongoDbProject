@@ -1,0 +1,165 @@
+/*de3d33*/
+
+.theme-realex #header-navbar {
+  background-color: #b60f29; }
+.theme-realex .navbar > .container .navbar-brand {
+  background-color: #b60f29;
+  width: 221px; }
+.theme-realex #nav-col, .theme-realex #page-wrapper {
+  background-color: #ffffff; }
+.theme-realex #sidebar-nav .nav > li > a {
+  color: #484848;
+  /* border-bottom: 1px solid #e0e0e0; */ }
+.theme-realex #sidebar-nav .nav > .open > .submenu > li > .submenu, .theme-realex #sidebar-nav .nav > .active > .submenu > li > .submenu, .theme-realex #sidebar-nav .nav li .submenu > li.open a, .theme-realex #nav-col-submenu .submenu > li > .submenu, .theme-realex #nav-col-submenu li .submenu > li.open > a {
+  background-color: #ebebeb; }
+.theme-realex #sidebar-nav .nav > .open > .submenu > .open > a, .theme-realex #sidebar-nav .nav > .active > .submenu > .open > a, .theme-realex #sidebar-nav .nav > .active > .submenu > .active > a, .theme-realex #nav-col-submenu .submenu > .open > a, .theme-realex #nav-col-submenu .submenu > .active > a {
+  border-bottom-color: transparent;
+  box-shadow: none; }
+.theme-realex #sidebar-nav .nav > .open > .submenu > li > .submenu > li a:hover, .theme-realex #sidebar-nav .nav > .active > .submenu > li > .submenu > li a:hover, .theme-realex #sidebar-nav .nav > .active > .submenu > li > .submenu > li a.active, .theme-realex .nav-small #nav-col-submenu .submenu > li > .submenu > li a:hover, .theme-realex .nav-small #nav-col-submenu .submenu > li > .submenu > li a.active {
+  color: #de3d33; }
+.theme-realex .nav-pills > li.active > a, .theme-realex .nav-pills > li.active > a:hover, .theme-realex .nav-pills > li.active > a:focus, .theme-realex #sidebar-nav .nav-pills > li.active > a, .theme-realex #sidebar-nav .nav-pills > li.active > a:hover, .theme-realex #sidebar-nav .nav-pills > li.active > a:focus, .theme-realex .nav-pills > li.open > a, .theme-realex .nav-pills > li.open > a:hover, .theme-realex .nav-pills > li.open > a:focus, .theme-realex #sidebar-nav .nav-pills > li.open > a, .theme-realex #sidebar-nav .nav-pills > li.open > a:hover, .theme-realex #sidebar-nav .nav-pills > li.open > a:focus, .theme-realex .nav-small #nav-col #sidebar-nav .nav-pills > li.open > a, .theme-realex .nav-small #nav-col #sidebar-nav .nav-pills > li.active > a, .theme-realex .nav-small #nav-col-submenu .submenu > .open > a, .theme-realex .nav-small #nav-col-submenu .submenu > .active > a, .theme-realex .nav-small #nav-col-submenu .submenu > li > a:hover {
+  background-color: whitesmoke;
+  border-color: #de3d33;
+  border-bottom-color: #e0e0e0;
+  color: #484848; }
+.theme-realex #sidebar-nav .nav-pills > li.active > a > i {
+  color: #b60f29; }
+.theme-realex #sidebar-nav .nav > li > a:hover {
+  background-color: whitesmoke;
+  border-color: #de3d33;
+  border-bottom-color: #e0e0e0;
+  color: #484848; }
+.theme-realex #header-navbar .nav > li > a {
+  color: #fff; }
+.theme-realex #header-navbar .nav > li > a:hover, .theme-realex #header-navbar .nav > li > a:focus, .theme-realex #header-navbar .nav .open > a, .theme-realex #header-navbar .nav .open > a:hover, .theme-realex #header-navbar .nav .open > a:focus {
+  background-color: #b60f29; }
+.theme-realex #sidebar-nav .nav li .submenu, .theme-realex #nav-col-submenu .submenu {
+  background-color: whitesmoke; }
+.theme-realex #sidebar-nav .nav li .submenu > li > a, .theme-realex .nav-small #nav-col-submenu .submenu > li > a {
+  color: #16191c; }
+.theme-realex #sidebar-nav .nav li.open > a.dropdown-toggle > .drop-icon, .theme-realex #sidebar-nav .nav li.active > a.dropdown-toggle > .drop-icon {
+  color: #16191c; }
+.theme-realex #sidebar-nav .nav li .submenu > li > a:hover, .theme-realex #sidebar-nav .nav li .submenu > li > a.active, .theme-realex #sidebar-nav .nav li .submenu > li.active > a, .theme-realex .nav-small #nav-col-submenu .submenu > .open > a, .theme-realex .nav-small #nav-col-submenu .submenu > .active > a, .theme-realex .nav-small #nav-col-submenu .submenu > li > a:hover, .theme-realex .nav-small #nav-col-submenu .submenu > li > a.active, .theme-realex .nav-small #nav-col-submenu .submenu > li.active > a {
+  background-color: #ebebeb; }
+.theme-realex .navbar > .container .navbar-brand {
+  color: #fff; }
+.theme-realex .navbar-toggle {
+  color: #fff; }
+.theme-realex .graph-box {
+  background-color: #de3d33 !important; }
+.theme-realex #content-wrapper {
+  background-color: #f9f9f9;
+  border-left: 2px solid #e7ebee; }
+.theme-realex #user-left-box .user-box, .theme-realex #user-left-box .user-box a {
+  color: #16191c; }
+.theme-realex #user-left-box .user-box a:hover, .theme-realex #user-left-box .user-box a:focus {
+  color: black; }
+.theme-realex #sidebar-nav .nav > li.nav-header {
+  border-top-color: #e7ebee;
+  color: #a6a6a6; }
+.theme-realex .nav-tabs {
+  background-color: #f9f9f9; }
+  .theme-realex .nav-tabs > li.active > a, .theme-realex .nav-tabs > li.active > a:hover, .theme-realex .nav-tabs > li.active > a:focus {
+    border-top-color: #de3d33; }
+.theme-realex h1 {
+  color: #de3d33; }
+.theme-realex #header-navbar .nav > li > a:hover, .theme-realex #header-navbar .nav > li > a:focus, .theme-realex #header-navbar .nav .open > a, .theme-realex #header-navbar .nav .open > a:hover, .theme-realex #header-navbar .nav .open > a:focus, .theme-realex .navbar-toggle:hover, .theme-realex .navbar-toggle:focus, .theme-realex .mobile-search.active > .btn {
+  background-color: #b60f29; }
+.theme-realex .main-box {
+  border: 1px solid #e7ebee; }
+.theme-realex a, .theme-realex .fc-state-default, .theme-realex .jvectormap-zoomin, .theme-realex .jvectormap-zoomout, .theme-realex #user-profile .profile-details ul > li > span {
+  color: #005c86; }
+.theme-realex a:hover, .theme-realex a:focus, .theme-realex .widget-users li > .details > .name > a:hover, .theme-realex .widget-todo .actions > a:hover {
+  color: #de3d33; }
+.theme-realex .table a.table-link:hover {
+  color: #b60f29; }
+.theme-realex .pagination > li > a, .theme-realex .pagination > li > span, .theme-realex .pagination > li > a:hover, .theme-realex .pagination > li > span:hover, .theme-realex .pagination > li > a:focus, .theme-realex .pagination > li > span:focus, .theme-realex .pagination > li > a:active, .theme-realex .pagination > li > span:active {
+  color: #de3d33; }
+.theme-realex .pagination > .active > a, .theme-realex .pagination > .active > span, .theme-realex .pagination > .active > a:hover, .theme-realex .pagination > .active > span:hover, .theme-realex .pagination > .active > a:focus, .theme-realex .pagination > .active > span:focus {
+  background-color: #de3d33;
+  border-color: #de3d33;
+  color: #fff; }
+.theme-realex .notifications-list .item-footer {
+  background-color: #272d33; }
+  .theme-realex .notifications-list .item-footer a:hover {
+    background-color: #0f1114; }
+.theme-realex .btn-primary, .theme-realex .btn-default, .theme-realex .btn-info, .theme-realex .btn-success, .theme-realex .btn-warning, .theme-realex .btn-danger, .theme-realex .btn-primary:hover, .theme-realex .btn-default:hover, .theme-realex .btn-info:hover, .theme-realex .btn-success:hover, .theme-realex .btn-warning:hover, .theme-realex .btn-danger:hover {
+  color: #fff; }
+.theme-realex .btn-primary {
+  background-color: #de3d33;
+  border-color: #b60f29; }
+.theme-realex .btn-primary:hover, .theme-realex .btn-primary:focus, .theme-realex .btn-primary:active, .theme-realex .btn-primary.active, .theme-realex .open .dropdown-toggle.btn-primary {
+  background-color: #b60f29;
+  border-color: #b60f29; }
+.theme-realex .btn-success {
+  background-color: #03a9f4;
+  border-color: #2980b9; }
+.theme-realex .btn-success:hover, .theme-realex .btn-success:focus, .theme-realex .btn-success:active, .theme-realex .btn-success.active, .theme-realex .open .dropdown-toggle.btn-success {
+  background-color: #2980b9;
+  border-color: #1c5c87; }
+.theme-realex h1 {
+  color: #de3d33; }
+.theme-realex .widget-users li > .details > .time {
+  color: #de3d33; }
+.theme-realex .conversation-item.item-right .conversation-body:before {
+  border-color: transparent transparent transparent #e2fdee; }
+.theme-realex .conversation-item.item-right .conversation-body, .theme-realex .invoice-summary .invoice-summary-item {
+  background-color: #e2fdee; }
+.theme-realex blockquote, .theme-realex blockquote.pull-right {
+  border-color: #de3d33; }
+.theme-realex a.list-group-item.active, .theme-realex a.list-group-item.active:hover, .theme-realex a.list-group-item.active:focus {
+  background-color: #de3d33;
+  border-color: #de3d33; }
+.theme-realex .nav .caret {
+  border-bottom-color: #de3d33;
+  border-top-color: #de3d33; }
+.theme-realex .panel-default > .panel-heading, .theme-realex .notifications-list .item-footer {
+  background-color: #de3d33; }
+.theme-realex .notifications-list .item-footer a:hover {
+  background-color: #b60f29; }
+.theme-realex #invoice-companies .invoice-dates .invoice-number > span, .theme-realex .notifications-list .item a .time {
+  color: #de3d33; }
+.theme-realex .table thead > tr > th > a:hover span {
+  color: #de3d33;
+  border-color: #de3d33; }
+.theme-realex #email-nav-items li.active {
+  border-left-color: #de3d33;
+  border-right-color: #de3d33; }
+  .theme-realex #email-nav-items li.active a {
+    color: #de3d33; }
+  .theme-realex #email-nav-items li.active .label-primary {
+    background-color: #de3d33; }
+.theme-realex #email-nav-items li a:hover {
+  color: #de3d33; }
+.theme-realex .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #de3d33 !important; }
+.theme-realex .select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #de3d33 !important; }
+.theme-realex .cd-timeline-img {
+  background-color: #de3d33;
+  box-shadow: 0 0 0 6px #bce9cf; }
+.theme-realex #cd-timeline::before {
+  background-color: #bce9cf; }
+.theme-realex .dataTable thead th:hover {
+  color: #de3d33; }
+.theme-realex .pace .pace-progress {
+  background-color: #fff; }
+.theme-realex #config-tool.closed #config-tool-cog:hover {
+  background-color: #de3d33; }
+
+.rtl.theme-realex #content-wrapper {
+  border-right: 2px solid #e7ebee;
+  border-left: 0; }
+
+@media only screen and (min-width: 1170px) {
+  .theme-realex .cd-timeline-content .cd-date {
+    color: #de3d33; } }
+
+@media (max-width: 991px) {
+  .theme-realex #logo.navbar-brand > img.normal-logo.logo-white {
+    display: block; }
+  .theme-realex #logo.navbar-brand > img.normal-logo.logo-black {
+    display: none; }
+  .theme-realex .navbar > .container .navbar-brand {
+    background-color: #de3d33; } }
+

@@ -1,0 +1,260 @@
+﻿<div class="row" ng-cloak>
+    <div class="col-lg-12">
+        <div class="main-box clearfix" style="min-height: 820px;">
+            <header class="main-box-header clearfix">
+                <a href="#/"> <h2> &lt; Back</h2></a>
+            </header>
+
+            <div class="main-box-body clearfix">
+
+                <div id="myWizard" class="wizard">
+                    <div class="wizard-inner">
+                        <ul class="steps">
+                            <li data-target="#step1" class="active"><span class="badge badge-primary">1</span>Order Info<span class="chevron"></span></li>
+                            <li data-target="#step2"><span class="badge">2</span>Layout<span class="chevron"></span></li>
+                            <li data-target="#step3"><span class="badge">3</span>List<span class="chevron"></span></li>
+                            <li data-target="#step4"><span class="badge">4</span>Review<span class="chevron"></span></li>
+                        </ul>
+                        <div class="actions">
+                            <button type="button" class="btn btn-default btn-mini btn-prev"> <i class="icon-arrow-left"></i>Prev</button>
+                            <button type="button" class="btn btn-success btn-mini btn-next" data-last="Place Order">Next<i class="icon-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-pane active" id="step1">
+                            <br />
+                            <h4>This is step 1</h4>
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="main-box">
+                                                <header class="main-box-header clearfix">
+                                                    <h2>Sender Information</h2>
+                                                </header>
+
+                                                <div class="main-box-body clearfix">
+                                                    <form role="form">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Contact Name</label>
+                                                            <input type="text" class="form-control" id="contactName" placeholder="Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Email address</label>
+                                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleTextarea">Special Insructions</label>
+                                                            <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="main-box">
+                                                <header class="main-box-header clearfix">
+                                                    <h2>Return Address</h2>
+                                                </header>
+
+                                                <div class="main-box-body clearfix">
+                                                    <div class="form-group">
+                                                        <label for="returnAddress1">Address Line 1</label>
+                                                        <input type="text" class="form-control" id="returnAddress1" placeholder="Street Address">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="returnAddress2">Address Line 2</label>
+                                                        <input type="text" class="form-control" id="returnAddress2" placeholder="Optional">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="returnAddress3">Address Line 3</label>
+                                                        <input type="text" class="form-control" id="returnAddress3" placeholder="Optional">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="returnAddress3">City</label>
+                                                        <input type="text" class="form-control" id="returnCity" placeholder="City">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>State</label>
+                                                        <select class="form-control">
+                                                            <option>Alabama</option>
+                                                            <option>Alaska</option>
+                                                            <option>Arizona</option>
+                                                            <option>Arkansas</option>
+                                                            <option>California</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="returnAddress3">Zip Code</label>
+                                                        <input type="text" class="form-control" id="returnZip" placeholder="Zip Code">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Checkboxes</label>
+                                                        <div class="checkbox-nice">
+                                                            <input type="checkbox" id="checkbox-1" checked="checked" />
+                                                            <label for="checkbox-1">
+                                                                Include Barcode
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="step-pane" id="step2">
+                            <br />
+                            <h4>This is step 2</h4>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="main-box">
+                                        <header class="main-box-header">
+                                            <h2>Approved Templates</h2>
+                                        </header>
+
+                                        <div class="main-box-body">
+                                            <div id="gallery-photos-lightbox">
+                                                <ul class="clearfix gallery-photos">
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_8.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_8.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_2.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_2.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_3.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_3.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_4.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_4.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_5.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_5.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_6.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_6.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_7.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_7.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                    <li class="col-md-3 col-sm-3 col-xs-6">
+                                                        <a href="/Themes/cube2/img/samples/hdr/img_1.jpg" class="photo-box image-link" style="background-image: url('/Themes/cube2/img/samples/hdr/small/img_1.jpg');"></a>
+                                                        <span class="thumb-meta-time"><i class="fa fa-clock-o"></i> 23 minutes ago</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-pane" id="step3">
+                            <br />
+                            <h4>This is step 3</h4>
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="main-box">
+                                                <header class="main-box-header clearfix">
+                                                    <h2>Select an existing list</h2>
+                                                </header>
+
+                                                <div class="main-box-body clearfix">
+                                                    <div class="form-group">
+                                                        <label>state</label>
+                                                        <select class="form-control"  size="8">
+                                                            <option value="United States">United States</option>
+                                                            <option value="United Kingdom">United Kingdom</option>
+                                                            <option value="Afghanistan">Afghanistan</option>
+                                                            <option value="Albania">Albania</option>
+                                                            <option value="Algeria">Algeria</option>
+                                                            <option value="American Samoa">American Samoa</option>
+                                                            <option value="Andorra">Andorra</option>
+                                                            <option value="Angola">Angola</option>
+                                                            <option value="Anguilla">Anguilla</option>
+                                                            <option value="Antarctica">Antarctica</option>
+                                                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                                            <option value="Argentina">Argentina</option>
+                                                            <option value="Armenia">Armenia</option>
+                                                            <option value="Aruba">Aruba</option>
+                                                            <option value="Australia">Australia</option>
+                                                            <option value="Austria">Austria</option>
+                                                            <option value="Azerbaijan">Azerbaijan</option>
+                                                            <option value="Slovakia">Slovakia</option> 
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="main-box">
+                                                <header class="main-box-header clearfix">
+                                                    <h2>...Or upload a new list</h2>
+                                                </header>
+
+                                                <div class="main-box-body clearfix">
+                                                    <div class="main-box clearfix">
+                                                        <div id="dropzone">
+                                                            <form id="demo-upload" class="dropzone dz-clickable" action="#" style="margin-bottom: 0;">
+                                                                <div class="dz-default dz-message">
+                                                                    <span>Drop files here to upload</span>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-pane" id="step4">
+                            <br />
+                            <h4>This is step 4</h4>
+
+                            <div class="alert alert-success fade in" style="margin: 100px 0;">
+                                <i class="fa fa-check-circle fa-fw fa-lg"></i>
+                                <strong>Congratulation!</strong> You have successfully finished our nice wizard.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- this page specific inline scripts -->
+<script>
+    $(function ($) {
+        alert('working');
+        //password strength meter
+        $('#examplePwdMeter').pwstrength({
+            label: '.pwdstrength-label'
+        });
+
+    });
+    $('#myWizard').on('actionclicked.fu.wizard', function (evt, data) {
+        // do something
+        alert(data);
+    });
+</script>

@@ -1,0 +1,210 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "AdminMaster.cshtml";
+    var loginStatusModel = Members.GetCurrentLoginStatus();
+    var member = Members.GetCurrentMember();
+    var profile = Umbraco.TypedMember(member.Id);
+    var profilePic = profile.GetCropUrl("memberProfilePicture", "profilePic");
+}
+@section pageCss
+{
+    <link rel="stylesheet" type="text/css" href="~/css/libs/ng-img-crop.css">
+    <style>
+        .cropArea {
+            background: #E4E4E4;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+
+}
+@section topScripts
+{
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/libs/ng-img-crop.js"></script>
+    <script src="~/Scripts/libs/ng-file-upload/ng-file-upload-shim.js"></script>
+    <script src="~/Scripts/libs/ng-file-upload/ng-file-upload.js"></script>
+
+    <script>
+
+        /**
+        * Converts data uri to Blob. Necessary for uploading.
+        *   http://stackoverflow.com/questions/4998908/convert-data-uri-to-file-then-append-to-formdata
+        *  param  {String} dataURI
+        *  return {Blob}
+        */
+
+        var dataURItoBlob = function (dataURI) {
+            var binary = atob(dataURI.split(',')[1]);
+            var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+            var array = [];
+            for (var i = 0; i < binary.length; i++) {
+                array.push(binary.charCodeAt(i));
+            }
+            return new Blob([new Uint8Array(array)], { type: mimeString });
+        };
+
+        var myAppModule = angular.module('ProfileApp', ['ngImgCrop', 'ngFileUpload'])
+		.controller('Ctrl', function ($scope, $http, Upload, $timeout) {
+		    $scope.image = [];
+
+		    $scope.myImage = '';
+		    $scope.myCroppedImage = '';
+		   
+
+
+		    var handleFileSelect = function (evt) {
+		        var file = evt.currentTarget.files[0];
+		        var reader = new FileReader();
+		        reader.onload = function (evt) {
+		            $scope.$apply(function ($scope) {
+		                $scope.myImage = evt.target.result;
+		            });
+		        };
+		        reader.readAsDataURL(file);
+		    };
+
+		    angular.element(document.querySelector('#fileInput')).on('change', handleFileSelect);
+
+		    $scope.upload = function (dataUrl, name) {
+		        var src = angular.element(document.querySelector('#profilePic')).attr('src');
+		        var filename = src.split('?');
+		        Upload.upload({
+		            url: '/Umbraco/Api/ProfileApi/AddFile/',
+		            data: {
+		                file: Upload.dataUrltoBlob(dataUrl, filename[0])
+		            },
+		        }).then(function (response) {
+		            $timeout(function () {
+		                $scope.result = response.data;
+		                var src = angular.element(document.querySelector('#profilePic')).attr('src');
+		                alert(src);
+		                $scope.$apply(function () {
+
+		                    $scope.profilePic;
+		                });
+		            });
+		        }, function (response) {
+		            if (response.status > 0) $scope.errorMsg = response.status
+                        + ': ' + response.data;
+		        }, function (evt) {
+		            $scope.progress = parseInt(100.0 * evt.loaded / evt.total);
+		        });
+		    }
+
+		    $scope.init = function (memberId) {
+		        alert(memberId);
+		        //$http({
+		        //    method: 'GET',
+		        //    url: '/someUrl'
+		        //}).then(function successCallback(response) {
+		        //    // this callback will be called asynchronously
+		        //    // when the response is available
+		        //}, function errorCallback(response) {
+		        //    // called asynchronously if an error occurs
+		        //    // or server returns response with an error status.
+		        //});
+		    };
+
+		});
+
+    </script>
+
+}
+
+<!-- Modals -->
+
+
+        <div class="row" id="user-profile" ng-app="ProfileApp" ng-controller="Ctrl" ng-init="init(@member.Id)">
+            <div class="col-lg-3 col-md-4 col-sm-4">
+                <div class="main-box clearfix">
+                    <header class="main-box-header clearfix">
+                        <h2>@loginStatusModel.Name</h2>
+                    </header>
+                    <div class="main-box-body clearfix">
+                        @if (loginStatusModel.IsLoggedIn)
+                        {
+                            <div class="profile-status">
+                                <i class="fa fa-circle"></i> Online
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="profile-status offline">
+                                <i class="fa fa-circle-o"></i> Offline
+                            </div>
+                        }
+                        <img id="profilePic" ng-src="@profilePic" alt="" class="profile-img img-responsive center-block" ng-model="profilePic" />
+                        <button class="img-edit-button md-trigger btn btn-primary mrg-b-lg pull-right" data-toggle="collapse" data-target="#update-image">
+                            <i class="fa fa-camera fa-lg"></i>
+                        </button>
+                        <div class="clearfix"></div>
+                        <div class="profile-label">
+                            <span class="label label-danger">@member.GetPropertyValue("memberTitle")</span>
+                        </div>
+                        <div class="profile-since">
+                            Last Login: <span class="emerald">@member.GetPropertyValue("umbracoMemberLastLogin")</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8">
+                <div class="main-box clearfix">
+                    <div class="tabs-wrapper profile-tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab-chat" data-toggle="tab">My Profile</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab-chat">
+                                <div class="conversation-wrapper">
+                                    <div class="conversation-new-message">
+                                        @Umbraco.RenderMacro("SimpleEditProfile")
+                                    </div>
+                                </div>
+                                <div id="update-image" class="collapse">
+                                    <header class="main-box-header clearfix">
+                                        <button class="md-close close">&times;</button>
+                                        <h2>Update Image</h2>
+                                    </header>
+                                    <div class="main-box-body clearfix">
+
+                                        <div class="row m-bot-15">
+                                            <div class="col-md-12">
+                                                <label class="btn btn-primary">
+                                                    <input type="file" id="fileInput">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="cropArea">
+                                                    <img-crop image="myImage" result-image="myCroppedImage"></img-crop>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-12">
+                                                <h4>Cropped Image:</h4>
+                                                <div class="m-bot-15">
+                                                    <img ng-src="{{myCroppedImage}}" />
+                                                </div>
+                                                <button class="btn btn-primary" ng-click="upload(myCroppedImage, fileInput.name)">Save Image</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+@section pageScripts
+{
+}

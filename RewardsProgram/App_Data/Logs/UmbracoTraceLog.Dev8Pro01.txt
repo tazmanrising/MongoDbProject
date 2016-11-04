@@ -1,0 +1,4 @@
+﻿ 2016-05-19 00:01:57,646 [P6272/D2/T216] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: steve@buckazdatabridge.com, IP Address: ::1
+ 2016-05-19 00:07:59,869 [P6272/D2/T243] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username steve@buckazdatabridge.com from IP address ::1
+ 2016-05-19 00:07:59,869 [P6272/D2/T243] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: steve@buckazdatabridge.com logged in from IP address ::1
+ 2016-05-19 00:27:30,625 [P6272/D2/T154] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: steve@buckazdatabridge.com, IP Address: ::1

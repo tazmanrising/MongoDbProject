@@ -1,0 +1,65 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>@Umbraco.Field("pageName") - Bootstrap Admin Template</title>
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="/css/cube2/bootstrap/bootstrap.min.css" />
+	
+	<!-- 
+	If you need RTL support just include here RTL CSS file <link rel="stylesheet" type="text/css" href="/css/cube2/libs/bootstrap-rtl.min.css" />
+	And add "rtl" class to <body> element - e.g. <body class="rtl"> 
+	-->
+	
+	<!-- libraries -->
+	<link rel="stylesheet" type="text/css" href="/css/cube2/libs/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="/css/cube2/libs/nanoscroller.css" />
+
+	<!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="/css/cube2/compiled/theme_styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+
+	<!-- this page specific styles -->
+
+	<!-- google font libraries -->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
+	
+	<!-- Favicon -->
+	<link type="image/x-icon" href="/favicon.png" rel="shortcut icon"/>
+
+	<!--[if lt IE 9]>
+		<script src="/scripts/html5shiv.js"></script>
+		<script src="/scripts/respond.min.js"></script>
+	<![endif]-->
+    @RenderSection("topScripts", false)
+</head>
+<body id="login-page-full" class="theme-whbl">
+
+	@RenderBody()
+	
+	<!-- global scripts -->
+	<script src="/scripts/jquery.js"></script>
+	<script src="/scripts/bootstrap.js"></script>
+	<script src="/scripts/jquery.nanoscroller.min.js"></script>
+	
+	
+	<!-- this page specific scripts -->
+
+	
+	<!-- theme scripts -->
+	<script src="/scripts/scripts.js"></script>
+	
+	<!-- this page specific inline scripts -->
+    @RenderSection("inlineScripts", false)
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<div ng-controller="KeyValuePairList.KeyValuePairListController">
+    <div class="control-group umb-control">
+        <div class="row">
+            <div>
+                <label>Key</label>
+            </div>
+            <div class="col-md-9">
+                <input class="form-control" type="text" ng-model="form.name"/>
+            </div>
+        </div>
+
+        <p>
+            <div>
+                <label>Value</label>
+            </div>
+            <div>
+                <input class="form-control" type="text" ng-model="form.id"/>
+            </div>
+        </p>
+        <button type="button" ng-click="addpair(form);"> Add </button>
+    </div>
+    <!--<div>
+        <div>
+            <label>Key Value Pair List</label>
+        </div>
+        <div>
+            <select size="5" ng-model="kvplist"
+                    ng-options="option.name for option in model.value track by option.id" >
+            </select>
+            <button type="button" ng-click="removepair(kvplist);"> Remove </button>
+        </div>
+<pre>
+{{kvplist}}
+</pre>
+    </div>-->
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Key
+            </th>
+            <th>
+                Value
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in model.value">
+            <td>{{item.name}}</td>
+            <td>{{item.id}}</td>
+            <td><button ng-click="model.remove($index);">-</button></td>
+        </tr>
+    </tbody>
+</table>

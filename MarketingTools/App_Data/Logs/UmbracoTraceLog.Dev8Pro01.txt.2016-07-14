@@ -1,0 +1,435 @@
+﻿ 2016-07-14 00:00:15,000 [P32436/D12/T78] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-07-14 00:00:15,008 [P32436/D12/T78] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 8ms)
+ 2016-07-14 00:00:15,011 [P32436/D12/T78] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-07-14 00:00:15,020 [P32436/D12/T78] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 9ms)
+ 2016-07-14 00:00:15,033 [P32436/D12/T78] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-07-14 00:00:15,045 [P32436/D12/T78] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 11ms)
+ 2016-07-14 00:00:53,050 [P32436/D12/T60] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-07-14 00:00:53,062 [P32436/D12/T60] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 12ms)
+ 2016-07-14 00:17:57,886 [P32436/D12/T63] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username dfargo@gd.gov from IP address ::1
+ 2016-07-14 00:18:53,977 [P32436/D12/T106] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username wilie.cyote@acme.com from IP address ::1
+ 2016-07-14 00:19:16,463 [P32436/D12/T285] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username wilie.cyote@acme.com from IP address ::1
+ 2016-07-14 00:19:55,524 [P32436/D12/T72] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username wilie.cyote@acme.com from IP address ::1
+ 2016-07-14 00:22:19,511 [P32436/D12/T13] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username wilie.cyote@acme.com from IP address ::1
+ 2016-07-14 00:24:33,864 [P32436/D12/T63] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username dfargo@gd.gov from IP address ::1
+ 2016-07-14 00:37:14,317 [P32436/D12/T32] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username dfargo@gd.gov from IP address ::1
+ 2016-07-14 00:37:44,113 [P32436/D12/T42] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: steve@buckazdatabridge.com, IP Address: ::1
+ 2016-07-14 00:37:48,434 [P32436/D12/T32] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username steve@buckazdatabridge.com from IP address ::1
+ 2016-07-14 00:37:48,435 [P32436/D12/T32] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: steve@buckazdatabridge.com logged in from IP address ::1
+ 2016-07-14 00:40:20,816 [P32436/D12/T66] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Editors.IEditorValidator
+ 2016-07-14 00:40:20,856 [P32436/D12/T66] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Editors.IEditorValidator, found 0 (took 40ms)
+ 2016-07-14 00:47:12,935 [P32436/D12/T285] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Logout' with Id '1071' has been published.
+ 2016-07-14 00:47:18,577 [P32436/D12/T99] INFO  umbraco.content - Save Xml to file...
+ 2016-07-14 00:47:18,582 [P32436/D12/T68] INFO  umbraco.content - Saved Xml to file.
+ 2016-07-14 00:51:39,136 [P32436/D12/T66] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Logout' with Id '1071' has been published.
+ 2016-07-14 00:51:44,846 [P32436/D12/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-07-14 00:51:44,849 [P32436/D12/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-07-14 00:53:14,800 [P32436/D12/T73] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Logout' with Id '1071' has been published.
+ 2016-07-14 00:53:20,482 [P32436/D12/T31] INFO  umbraco.content - Save Xml to file...
+ 2016-07-14 00:53:20,485 [P32436/D12/T95] INFO  umbraco.content - Saved Xml to file.
+ 2016-07-14 00:53:37,996 [P32436/D12/T38] ERROR dashboardUtilities.FeedProxy - Exception occurred
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at dashboardUtilities.FeedProxy.Page_Load(Object sender, EventArgs e)
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2016-07-14 00:55:30,617 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2016-07-14 00:55:30,618 [P32436/D12/T9] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2016-07-14 00:55:30,618 [P32436/D12/T25] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2016-07-14 00:55:30,618 [P32436/D12/T106] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2016-07-14 00:55:30,618 [P32436/D12/T12] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2016-07-14 00:55:30,619 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2016-07-14 00:55:30,619 [P32436/D12/T8] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2016-07-14 00:55:30,619 [P32436/D12/T14] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2016-07-14 00:55:52,071 [P32436/D13/T57] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on DEV8PRO01
+ 2016-07-14 00:55:52,118 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-07-14 00:55:52,124 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Hash determined (took 6ms)
+ 2016-07-14 00:55:52,201 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-07-14 00:55:52,306 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 105ms)
+ 2016-07-14 00:55:52,382 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-07-14 00:55:52,383 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2016-07-14 00:55:52,383 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-07-14 00:55:52,384 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 0ms)
+ 2016-07-14 00:55:52,392 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-07-14 00:55:52,392 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+ 2016-07-14 00:55:52,392 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-07-14 00:55:52,396 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 3ms)
+ 2016-07-14 00:55:52,449 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-07-14 00:55:52,450 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-07-14 00:55:52,450 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-07-14 00:55:52,451 [P32436/D13/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-07-14 00:55:53,720 [P32436/D13/T57] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 00:55:53,984 [P32436/D13/T57] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 00:55:54,016 [P32436/D13/T57] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 00:55:54,325 [P32436/D13/T57] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-07-14 00:55:54,398 [P32436/D13/T57] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-07-14 00:55:54,580 [P32436/D13/T57] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-07-14 00:55:54,588 [P32436/D13/T57] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2566ms)
+ 2016-07-14 00:55:56,121 [P32436/D13/T38] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65068/umbraco (UmbracoModule request)
+ 2016-07-14 00:56:00,718 [P32436/D12/T8] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2016-07-14 00:57:47,996 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2016-07-14 00:57:48,044 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2016-07-14 00:57:48,044 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2016-07-14 00:57:48,044 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2016-07-14 00:57:48,044 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2016-07-14 00:57:48,044 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2016-07-14 00:57:48,044 [P32436/D13/T218] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2016-07-14 00:58:07,685 [P32436/D14/T16] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on DEV8PRO01
+ 2016-07-14 00:58:07,730 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-07-14 00:58:07,735 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Hash determined (took 4ms)
+ 2016-07-14 00:58:07,812 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-07-14 00:58:07,916 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 104ms)
+ 2016-07-14 00:58:07,993 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-07-14 00:58:07,994 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2016-07-14 00:58:07,994 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-07-14 00:58:07,995 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 0ms)
+ 2016-07-14 00:58:08,003 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-07-14 00:58:08,003 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+ 2016-07-14 00:58:08,003 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-07-14 00:58:08,007 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 3ms)
+ 2016-07-14 00:58:08,063 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-07-14 00:58:08,064 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-07-14 00:58:08,064 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-07-14 00:58:08,064 [P32436/D14/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-07-14 00:58:08,975 [P32436/D14/T16] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 00:58:09,228 [P32436/D14/T16] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 00:58:09,264 [P32436/D14/T16] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 00:58:09,578 [P32436/D14/T16] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-07-14 00:58:09,654 [P32436/D14/T16] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-07-14 00:58:09,851 [P32436/D14/T16] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-07-14 00:58:09,860 [P32436/D14/T16] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2223ms)
+ 2016-07-14 00:58:11,342 [P32436/D14/T42] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65068/umbraco (UmbracoModule request)
+ 2016-07-14 00:58:11,437 [P32436/D14/T42] INFO  umbraco.content - Load Xml from file...
+ 2016-07-14 00:58:11,438 [P32436/D14/T42] INFO  umbraco.content - Loaded Xml from file.
+ 2016-07-14 00:58:12,590 [P32436/D14/T42] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-07-14 00:58:12,591 [P32436/D14/T42] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2016-07-14 00:58:18,137 [P32436/D13/T7] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2016-07-14 00:59:11,515 [P32436/D14/T12] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 00:59:11
+ 2016-07-14 00:59:12,123 [P32436/D14/T42] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-07-14 00:59:12,123 [P32436/D14/T42] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 0ms)
+ 2016-07-14 01:01:38,744 [P32436/D14/T44] ERROR dashboardUtilities.FeedProxy - Exception occurred
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at dashboardUtilities.FeedProxy.Page_Load(Object sender, EventArgs e)
+ 2016-07-14 01:01:41,325 [P32436/D14/T43] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-07-14 01:01:41,326 [P32436/D14/T43] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 0ms)
+ 2016-07-14 01:02:28,732 [P32436/D14/T83] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-07-14 01:02:28,732 [P32436/D14/T83] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2016-07-14 01:02:28,748 [P32436/D14/T83] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2016-07-14 01:02:28,748 [P32436/D14/T83] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 0ms)
+ 2016-07-14 01:03:09,031 [P32436/D14/T48] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username dfargo@gd.gov from IP address ::1
+ 2016-07-14 01:21:10,134 [P32436/D14/T462] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: steve@buckazdatabridge.com, IP Address: ::1
+ 2016-07-14 04:59:11,792 [P32436/D14/T943] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 04:59:11
+ 2016-07-14 08:59:12,052 [P32436/D14/T962] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 08:59:11
+ 2016-07-14 09:52:17,593 [P32436/D14/T959] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username dfargo@gd.gov from IP address ::1
+ 2016-07-14 09:56:05,746 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2016-07-14 09:56:05,746 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2016-07-14 09:56:05,747 [P32436/D14/T931] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2016-07-14 09:56:05,748 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2016-07-14 09:56:05,748 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2016-07-14 09:56:05,748 [P32436/D14/T962] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2016-07-14 09:56:05,748 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2016-07-14 09:56:05,748 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2016-07-14 09:56:05,748 [P32436/D14/T941] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2016-07-14 09:56:05,758 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2016-07-14 09:56:05,758 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2016-07-14 09:56:05,758 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2016-07-14 09:56:05,758 [P32436/D14/T982] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2016-07-14 09:56:05,758 [P32436/D14/T958] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2016-07-14 09:56:05,758 [P32436/D14/T936] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2016-07-14 09:56:35,856 [P32436/D14/T957] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2016-07-14 12:46:17,891 [P32436/D15/T16] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on DEV8PRO01
+ 2016-07-14 12:46:17,913 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-07-14 12:46:17,920 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Hash determined (took 6ms)
+ 2016-07-14 12:46:17,961 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-07-14 12:46:18,160 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 199ms)
+ 2016-07-14 12:46:18,171 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-07-14 12:46:18,178 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
+ 2016-07-14 12:46:18,179 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-07-14 12:46:18,185 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 6ms)
+ 2016-07-14 12:46:18,194 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-07-14 12:46:18,200 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 5ms)
+ 2016-07-14 12:46:18,201 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-07-14 12:46:18,210 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 9ms)
+ 2016-07-14 12:46:18,234 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-07-14 12:46:18,241 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 7ms)
+ 2016-07-14 12:46:18,242 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-07-14 12:46:18,249 [P32436/D15/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 7ms)
+ 2016-07-14 12:46:19,531 [P32436/D15/T16] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 12:46:19,779 [P32436/D15/T16] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 12:46:19,780 [P32436/D15/T16] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 12:46:20,082 [P32436/D15/T16] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-07-14 12:46:20,094 [P32436/D15/T16] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-07-14 12:46:20,280 [P32436/D15/T16] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-07-14 12:46:20,288 [P32436/D15/T16] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2447ms)
+ 2016-07-14 12:46:20,863 [P32436/D15/T538] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65068/umbraco (UmbracoModule request)
+ 2016-07-14 12:46:20,953 [P32436/D15/T538] INFO  umbraco.content - Load Xml from file...
+ 2016-07-14 12:46:20,954 [P32436/D15/T538] INFO  umbraco.content - Loaded Xml from file.
+ 2016-07-14 12:46:22,134 [P32436/D15/T538] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-07-14 12:46:22,146 [P32436/D15/T538] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 11ms)
+ 2016-07-14 12:46:24,164 [P32436/D15/T538] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-07-14 12:46:24,171 [P32436/D15/T538] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 7ms)
+ 2016-07-14 12:46:24,551 [P32436/D15/T538] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2016-07-14 12:46:24,558 [P32436/D15/T538] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 6ms)
+ 2016-07-14 12:47:21,035 [P32436/D15/T540] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 12:47:20
+ 2016-07-14 13:07:45,671 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2016-07-14 13:07:45,671 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2016-07-14 13:07:45,672 [P32436/D15/T538] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2016-07-14 13:07:45,708 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2016-07-14 13:07:45,708 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2016-07-14 13:07:45,708 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2016-07-14 13:07:45,708 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2016-07-14 13:07:45,708 [P32436/D15/T537] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2016-07-14 13:07:45,708 [P32436/D15/T538] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2016-07-14 13:07:45,709 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2016-07-14 13:07:45,709 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2016-07-14 13:07:45,710 [P32436/D15/T540] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2016-07-14 13:07:45,710 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2016-07-14 13:07:45,710 [P32436/D15/T535] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2016-07-14 13:07:45,710 [P32436/D15/T524] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2016-07-14 13:08:15,810 [P32436/D15/T524] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2016-07-14 14:56:49,115 [P32436/D16/T57] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on DEV8PRO01
+ 2016-07-14 14:56:49,140 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-07-14 14:56:49,144 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Hash determined (took 4ms)
+ 2016-07-14 14:56:49,187 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-07-14 14:56:49,376 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 189ms)
+ 2016-07-14 14:56:49,389 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-07-14 14:56:49,396 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 7ms)
+ 2016-07-14 14:56:49,397 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-07-14 14:56:49,403 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 6ms)
+ 2016-07-14 14:56:49,411 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-07-14 14:56:49,420 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 8ms)
+ 2016-07-14 14:56:49,420 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-07-14 14:56:49,427 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 7ms)
+ 2016-07-14 14:56:49,452 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-07-14 14:56:49,460 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 7ms)
+ 2016-07-14 14:56:49,461 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-07-14 14:56:49,467 [P32436/D16/T57] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 6ms)
+ 2016-07-14 14:56:50,729 [P32436/D16/T57] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 14:56:50,987 [P32436/D16/T57] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 14:56:50,991 [P32436/D16/T57] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 14:56:51,304 [P32436/D16/T57] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-07-14 14:56:51,315 [P32436/D16/T57] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-07-14 14:56:51,505 [P32436/D16/T57] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-07-14 14:56:51,512 [P32436/D16/T57] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2444ms)
+ 2016-07-14 14:56:52,095 [P32436/D16/T804] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65068/umbraco (UmbracoModule request)
+ 2016-07-14 14:56:52,190 [P32436/D16/T804] INFO  umbraco.content - Load Xml from file...
+ 2016-07-14 14:56:52,191 [P32436/D16/T804] INFO  umbraco.content - Loaded Xml from file.
+ 2016-07-14 14:56:53,358 [P32436/D16/T804] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-07-14 14:56:53,371 [P32436/D16/T804] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 12ms)
+ 2016-07-14 14:57:24,517 [P32436/D16/T806] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-07-14 14:57:24,525 [P32436/D16/T806] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 7ms)
+ 2016-07-14 14:57:24,921 [P32436/D16/T806] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2016-07-14 14:57:24,927 [P32436/D16/T806] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 6ms)
+ 2016-07-14 14:57:33,541 [P32436/D16/T804] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username wilie.cyote@acme.com from IP address ::1
+ 2016-07-14 14:57:39,984 [P32436/D16/T806] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-07-14 14:57:39,984 [P32436/D16/T806] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2016-07-14 15:01:44,131 [P32436/D16/T806] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username steve@buckazdatabridge.com from IP address ::1
+ 2016-07-14 15:01:44,132 [P32436/D16/T806] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: steve@buckazdatabridge.com logged in from IP address ::1
+ 2016-07-14 15:01:44,834 [P32436/D16/T808] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-07-14 15:01:44,847 [P32436/D16/T808] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 12ms)
+ 2016-07-14 15:01:59,070 [P32436/D16/T804] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-07-14 15:01:59,079 [P32436/D16/T804] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 8ms)
+ 2016-07-14 15:01:59,081 [P32436/D16/T804] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-07-14 15:01:59,092 [P32436/D16/T804] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 10ms)
+ 2016-07-14 15:07:54,645 [P32436/D16/T807] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username dfargo@gd.gov from IP address ::1
+ 2016-07-14 15:10:18,596 [P32436/D16/T797] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Database exception occurred
+System.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 55) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 266
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Update(String tableName, String primaryKeyName, Object poco, Object primaryKeyValue, IEnumerable`1 columns)
+ClientConnectionId:86651e74-1bc5-4d11-afcc-0d5d129a1eb3
+Error Number:1205,State:51,Class:13
+ 2016-07-14 15:10:18,817 [P32436/D16/T797] ERROR Umbraco.Web.Strategies.ServerRegistrationEventHandler - Failed to update server record in database.
+System.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 55) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteNonQuery() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 266
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass1.<ExecuteNonQueryWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteNonQueryWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.Update(String tableName, String primaryKeyName, Object poco, Object primaryKeyValue, IEnumerable`1 columns)
+   at Umbraco.Core.Persistence.Database.Update(Object poco, Object primaryKeyValue, IEnumerable`1 columns)
+   at Umbraco.Core.Persistence.Repositories.ServerRegistrationRepository.PersistUpdatedItem(IServerRegistration entity)
+   at Umbraco.Core.Cache.DefaultRepositoryCachePolicy`2.CreateOrUpdate(TEntity entity, Action`1 persistMethod)
+   at Umbraco.Core.Persistence.Repositories.RepositoryBase`2.PersistUpdatedItem(IEntity entity)
+   at Umbraco.Core.Persistence.UnitOfWork.PetaPocoUnitOfWork.Commit(Action`1 transactionCompleting)
+   at Umbraco.Core.Persistence.UnitOfWork.PetaPocoUnitOfWork.Commit()
+   at Umbraco.Core.Services.ServerRegistrationService.<>c__DisplayClass6.<TouchServer>b__2(LockedRepository`1 xr)
+   at Umbraco.Core.Persistence.LockingRepository`1.WithWriteLocked(Action`1 action, Boolean autoCommit)
+   at Umbraco.Core.Services.ServerRegistrationService.TouchServer(String serverAddress, String serverIdentity, TimeSpan staleTimeout)
+   at Umbraco.Web.Strategies.ServerRegistrationEventHandler.TouchServerTask.PerformRun()
+ClientConnectionId:86651e74-1bc5-4d11-afcc-0d5d129a1eb3
+Error Number:1205,State:51,Class:13
+ 2016-07-14 15:32:24,862 [P32436/D16/T804] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: steve@buckazdatabridge.com, IP Address: ::1
+ 2016-07-14 16:08:12,290 [P32436/D16/T806] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username dfargo@gd.gov from IP address ::1
+ 2016-07-14 22:42:20,438 [P11920/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on DEV8PRO01
+ 2016-07-14 22:42:20,509 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-07-14 22:42:20,525 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 16ms)
+ 2016-07-14 22:42:20,643 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-07-14 22:42:20,816 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 172ms)
+ 2016-07-14 22:42:20,944 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-07-14 22:42:20,945 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2016-07-14 22:42:20,945 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-07-14 22:42:20,945 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 0ms)
+ 2016-07-14 22:42:20,954 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-07-14 22:42:20,955 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+ 2016-07-14 22:42:20,955 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-07-14 22:42:20,958 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 3ms)
+ 2016-07-14 22:42:21,040 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-07-14 22:42:21,040 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-07-14 22:42:21,040 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-07-14 22:42:21,041 [P11920/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-07-14 22:42:22,450 [P11920/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 22:42:22,810 [P11920/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 22:42:22,865 [P11920/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 22:42:23,169 [P11920/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-07-14 22:42:23,285 [P11920/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-07-14 22:42:23,501 [P11920/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-07-14 22:42:23,513 [P11920/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3149ms)
+ 2016-07-14 22:42:25,756 [P11920/D2/T5] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65068/umbraco (UmbracoModule request)
+ 2016-07-14 22:42:25,927 [P11920/D2/T5] INFO  umbraco.content - Load Xml from file...
+ 2016-07-14 22:42:25,928 [P11920/D2/T5] INFO  umbraco.content - Loaded Xml from file.
+ 2016-07-14 22:42:27,089 [P11920/D2/T5] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-07-14 22:42:27,090 [P11920/D2/T5] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2016-07-14 22:42:28,337 [P11920/D2/T5] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-07-14 22:42:28,337 [P11920/D2/T5] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 0ms)
+ 2016-07-14 22:42:28,759 [P11920/D2/T5] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2016-07-14 22:42:28,760 [P11920/D2/T5] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 0ms)

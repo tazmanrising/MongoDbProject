@@ -1,0 +1,25 @@
+﻿.m-top-5 { margin-top:5px !important; }
+.m-top-10 { margin-top:10px !important; }
+.m-top-15 { margin-top:15px !important; }
+.m-top-30 { margin-top:30px !important; }
+
+.m-bot-5 { margin-bottom:5px !important; }
+.m-bot-10 { margin-bottom:10px !important; }
+.m-bot-15 { margin-bottom:15px !important; }
+.m-bot-30 { margin-bottom:30px !important; }
+
+.square {
+  width: 60%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

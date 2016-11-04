@@ -1,0 +1,62 @@
+﻿ 2016-10-28 01:09:51,397 [P17124/D2/T602] INFO  Umbraco.Core.Security.UmbracoMembershipProviderBase - Login attempt succeeded for username sample@user.com from IP address ::1
+ 2016-10-28 01:10:27,499 [P17124/D2/T593] ERROR Umbraco.Core.Security.AuthenticationExtensions - The current identity cannot be converted to Umbraco.Core.Security.UmbracoBackOfficeIdentity
+System.InvalidOperationException: Cannot create a Umbraco.Core.Security.UmbracoBackOfficeIdentity from System.Security.Claims.ClaimsIdentity since the required claim http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier is missing
+   at Umbraco.Core.Security.UmbracoBackOfficeIdentity.FromClaimsIdentity(ClaimsIdentity identity)
+   at Umbraco.Core.Security.AuthenticationExtensions.GetCurrentIdentity(HttpContextBase http, Boolean authenticateRequestIfNotFound)
+ 2016-10-28 01:10:28,099 [P17124/D2/T596] ERROR Umbraco.Core.Security.AuthenticationExtensions - The current identity cannot be converted to Umbraco.Core.Security.UmbracoBackOfficeIdentity
+System.InvalidOperationException: Cannot create a Umbraco.Core.Security.UmbracoBackOfficeIdentity from System.Security.Claims.ClaimsIdentity since the required claim http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier is missing
+   at Umbraco.Core.Security.UmbracoBackOfficeIdentity.FromClaimsIdentity(ClaimsIdentity identity)
+   at Umbraco.Core.Security.AuthenticationExtensions.GetCurrentIdentity(HttpContextBase http, Boolean authenticateRequestIfNotFound)
+ 2016-10-28 01:10:36,212 [P17124/D2/T609] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username stickelt@gmail.com from IP address ::1
+ 2016-10-28 01:10:36,214 [P17124/D2/T609] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: stickelt@gmail.com logged in from IP address ::1
+ 2016-10-28 01:10:36,754 [P17124/D2/T603] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-10-28 01:10:36,763 [P17124/D2/T603] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 9ms)
+ 2016-10-28 01:10:36,881 [P17124/D2/T575] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-10-28 01:10:36,940 [P17124/D2/T575] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 58ms)
+ 2016-10-28 01:10:36,940 [P17124/D2/T604] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-10-28 01:10:36,957 [P17124/D2/T604] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 16ms)
+ 2016-10-28 01:10:36,964 [P17124/D2/T583] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="form" application="forms" title="Forms" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.FormTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-10-28 01:10:36,965 [P17124/D2/T583] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="2" alias="datasource" application="forms" title="Datasources" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.DataSourceTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-10-28 01:10:36,965 [P17124/D2/T583] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="3" alias="prevaluesource" application="forms" title="Prevalue sources" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.PreValueSourceTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-10-28 01:10:36,965 [P17124/D2/T583] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="3" alias="formsecurity" application="users" title="Forms Security" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.FormSecurityTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-10-28 01:10:36,992 [P17124/D2/T583] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-10-28 01:10:36,993 [P17124/D2/T583] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2016-10-28 01:10:36,998 [P17124/D2/T583] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-10-28 01:10:37,034 [P17124/D2/T583] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 35ms)
+ 2016-10-28 01:22:06,882 [P16120/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.4.3 application starting on DESKTOP-6RPLCLA
+ 2016-10-28 01:22:06,918 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-10-28 01:22:06,931 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 13ms)
+ 2016-10-28 01:22:06,991 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-10-28 01:22:07,270 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 278ms)
+ 2016-10-28 01:22:07,288 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-10-28 01:22:07,294 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 5ms)
+ 2016-10-28 01:22:07,294 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-10-28 01:22:07,306 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 12ms)
+ 2016-10-28 01:22:07,321 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-10-28 01:22:07,330 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 8ms)
+ 2016-10-28 01:22:07,330 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-10-28 01:22:07,342 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 12ms)
+ 2016-10-28 01:22:07,378 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-10-28 01:22:07,385 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 6ms)
+ 2016-10-28 01:22:07,385 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-10-28 01:22:07,394 [P16120/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 8ms)
+ 2016-10-28 01:22:08,272 [P16120/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-10-28 01:22:08,514 [P16120/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-10-28 01:22:08,517 [P16120/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-10-28 01:22:08,683 [P16120/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-10-28 01:22:08,700 [P16120/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-10-28 01:22:08,824 [P16120/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-10-28 01:22:08,841 [P16120/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2034ms)
+ 2016-10-28 01:22:09,971 [P16120/D2/T8] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:49810/umbraco (UmbracoModule request)
+ 2016-10-28 01:22:47,228 [P16120/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2016-10-28 01:22:47,229 [P16120/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2016-10-28 01:22:48,276 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-10-28 01:22:48,295 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 19ms)
+ 2016-10-28 01:22:51,132 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-10-28 01:22:51,146 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 14ms)
+ 2016-10-28 01:22:51,443 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2016-10-28 01:22:51,449 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 5ms)
+ 2016-10-28 01:22:55,696 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-10-28 01:22:55,697 [P16120/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2016-10-28 05:24:06,622 [P16120/D2/T151] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-10-27 05:24:06
+ 2016-10-28 09:24:06,652 [P16120/D2/T90] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-10-27 09:24:06

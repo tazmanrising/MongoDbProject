@@ -1,0 +1,52 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "PublicRoot.cshtml";
+	var mediaId = CurrentPage.backgroundImage;
+	var bgImage = Umbraco.Field("portalBackgroundImage", recursive: true);
+	//var forgotPWURL = Umbraco.Content(CurrentPage.portalForgotPassword).Url;
+	var registerURL = Umbraco.Content(Umbraco.Field("portalRegister", recursive: true).ToString()).Url;
+    //var loginURL = Umbraco.Content(CurrentPage.portalLogin).Url;
+}
+@section topScripts{
+    <script type="text/javascript">
+        localStorage.setItem("loginPage", "@Umbraco.Field("portalLogin", recursive: true)")
+        console.log(window.location.pathname);
+        console.log(localStorage.getItem("loginPage"));
+    </script>
+}
+	<div id="login-full-wrapper" style="background: url(@bgImage) no-repeat center center; background-size: cover;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="login-box">
+						<div id="login-box-holder">
+							<div class="row">
+								<div class="col-xs-12">
+									<header id="login-header">
+										<div id="login-logo">
+											<img src="~/Themes/cube2/img/samples/buckaz-mt-logo.png" alt=""/>
+										</div>
+									</header>
+									<div id="login-box-inner">
+										@Umbraco.RenderMacro("Login")
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div id="login-box-footer" class="emerald-bg">
+							<div class="row">
+								<div class="col-xs-12">
+									Do not have an account? 
+									<a href="@registerURL">
+										Register now
+									</a>
+                                    <br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

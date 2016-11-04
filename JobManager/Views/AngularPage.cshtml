@@ -1,0 +1,26 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "AdminMaster.cshtml";
+}
+@section topScripts {
+	<script src="~/Scripts/angular.min.js"></script>
+}
+<div class="row" ng-app="">
+
+	<div class="col-lg-6">
+		<div class="main-box">
+			<header class="main-box-header clearfix">
+				<h2>Basic elements</h2>
+			</header>
+			<div class="main-box-body clearfix">
+				<div role="form">
+				<div class="form-group">
+					<label>Name :</label> <input type="text" ng-model="name" class="form-control">
+					<h2 class="value">Hello {{name}}</h2>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				
+</div>

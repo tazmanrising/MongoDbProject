@@ -1,0 +1,43 @@
+﻿<h4>{{message}}</h4>
+<h6>{{currentTime}}</h6>
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="client in clientList">
+        <div class="main-box clearfix profile-box-contact">
+            <div class="main-box-body clearfix">
+                <div class="profile-box-header buckltgray-bg clearfix">
+                    <img ng-src="{{client.LogoURL || '/img/placeholders/company.png'}}" alt="" class="profile-img img-responsive pull-left"/>
+                    <h2>{{client.ClientName}}</h2>
+                    <div class="job-position">
+                        {{client.ClientCode}}
+                    </div>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fa fa-user"></i> {{client.ContactName || "- -"}}
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i> {{client.ContactEmail || "- -"}}
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i> {{client.ContactPhone || "- -"}}
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="profile-box-footer clearfix">
+                    <a href="">
+                        <span class="value">783</span>
+                        <span class="label">Orders</span>
+                    </a>
+                    <a href="">
+                        <span class="value">912</span>
+                        <span class="label">Jobs</span>
+                    </a>
+                    <a href="">
+                        <span class="value">83</span>
+                        <span class="label">Active Jobs</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

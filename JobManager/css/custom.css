@@ -1,0 +1,45 @@
+﻿.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:   #acd3e5;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #acd3e5;
+   opacity:  1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #acd3e5;
+   opacity:  1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #acd3e5;
+}
+
+.img-edit-button {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    top: -24px;
+    border-radius: 50%
+}
+.img-edit-button i {
+    margin: 0 0 -4px -2px;
+}
+
+.m-top-5 { margin-top:5px !important; }
+.m-top-10 { margin-top:10px !important; }
+.m-top-15 { margin-top:15px !important; }
+.m-top-30 { margin-top:30px !important; }
+
+.m-bot-5 { margin-bottom:5px !important; }
+.m-bot-10 { margin-bottom:10px !important; }
+.m-bot-15 { margin-bottom:15px !important; }
+.m-bot-30 { margin-bottom:30px !important; }
+
+  .feed li .filelist {
+    margin-left: 60px;
+    margin-top: 10px; }
+    .feed li .filelist .item {
+      /*float: left;*/
+      margin-right: 2px; }
+      .feed li .filelist .item i {
+        width: 50px;
+        height: 50px; }

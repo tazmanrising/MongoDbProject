@@ -1,0 +1,231 @@
+﻿<div class="row" id="user-profile">
+    <div class="col-lg-3 col-md-4 col-sm-4">
+        <div class="main-box clearfix">
+            <header class="main-box-header clearfix">
+                <h2>Bob Miller</h2>
+            </header>
+
+            <div class="main-box-body clearfix">
+                <div class="profile-status">
+                    <i class="fa fa-circle"></i> Online
+                </div>
+                <img src="/images/user-lg.png" alt="" width="220"class="profile-img img-responsive center-block" />
+                <div class="profile-label m-bot-15">
+                    <span class="label label-danger">Admin</span>
+                </div>
+
+                <div class="profile-since m-top-15">
+                    Member since: Jul 2016
+                </div>
+
+                <div class="profile-details">
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-truck"></i>Orders: <span>2</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-lg-9 col-md-8 col-sm-8">
+        <div class="main-box clearfix">
+            <div class="tabs-wrapper profile-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a showtab="" data-target="#tab-profile" data-toggle="tab">My Profile</a></li>
+                    <li><a showtab="" data-target="#tab-activity" data-toggle="tab">Activity</a></li>
+                    <!--<li><a showtab="" data-target="#tab-account" data-toggle="tab">Account Info</a></li>-->
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab-profile">
+                        <form>
+                            <div class="col-lg-8 col-md-12">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="notificationEmail">Notification Email</label>
+                                    <input type="email" class="form-control" id="notificationEmail" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactPhone">Contact Phone Number</label>
+                                    <input type="text" class="form-control" id="companyName" placeholder="Contact Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <a href="#"> + Change Password</a>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-activity">
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-truck"></i>
+                                        </td>
+                                        <td>
+                                            <a href="#">ATHOME-2</a> Order accepted by <strong>Sue Mulkey</strong>
+                                        </td>
+                                        <td>
+                                            2014/08/08 12:08
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-upload"></i>
+                                        </td>
+                                        <td>
+                                            <a href="#">Bob Miller</a> Uploaded 3 files.
+                                        </td>
+                                        <td>
+                                            2014/08/08 12:08
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-truck"></i>
+                                        </td>
+                                        <td>
+                                            <a href="#">ATHOME-2</a> submitted by <strong>Alesandra Mora</strong>
+                                        </td>
+                                        <td>
+                                            2014/08/08 12:08
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane clearfix fade" id="tab-account">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="main-box">
+                                    <header class="main-box-header clearfix">
+                                        <h2>Billing Address</h2>
+                                    </header>
+
+                                    <div class="main-box-body clearfix">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Address Line 1</label>
+                                            <input type="text" class="form-control" id="billingAddressInput1" placeholder="Address 1">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Address Line 2</label>
+                                            <input type="text" class="form-control" id="billingAddressInput2" placeholder="Address 2 (Optional)">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">City</label>
+                                            <input type="text" class="form-control" id="billingCityInput" placeholder="City">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">State</label>
+                                            <select class="form-control">
+                                                <option>AL</option>
+                                                <option>AK</option>
+                                                <option>AR</option>
+                                                <option>AZ</option>
+                                                <option>CA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Zip Code</label>
+                                            <input type="text" class="form-control" id="billingPostalCodeInput" placeholder="Zip">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="main-box">
+                                    <header class="main-box-header clearfix">
+                                        <h2>Default Shipping Preference</h2>
+                                    </header>
+
+                                    <div class="main-box-body clearfix">
+                                        <div class="form-group">
+                                            <div class="radio">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                <label for="optionsRadios1">
+                                                    Ship to Realty Executive Office - <span class="gray">Fixed Shipping fee of $5.00</span>
+                                                </label>
+                                            </div>
+                                            <hr />
+                                            <div class="radio">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                <label for="optionsRadios2">
+                                                    Ship to Address - <span class="gray">Delivery times and prices will vary with order.</span>
+                                                </label>
+                                            </div>
+                                            <hr />
+                                            <div class="radio">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2">
+                                                <label for="optionsRadios3">
+                                                    Pick up from BUCKAZ Communications - <span class="gray">Fixed Handling fee of $2.00</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-box">
+                                    <header class="main-box-header clearfix">
+                                        <h2>Credit Card Information</h2>
+                                    </header>
+
+                                    <div class="main-box-body clearfix">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Credit Card Type</label>
+                                            <select class="form-control">
+                                                <option>-- Select One --</option>
+                                                <option>Visa</option>
+                                                <option>Master Card</option>
+                                                <option>American Express</option>
+                                                <option>Discover</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Credit Card Number</label>
+                                            <input type="text" class="form-control" id="ccNumber" placeholder="Credit Card Number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Expiration Date</label>
+                                            <input type="text" class="form-control" id="ccExpiration" placeholder="MM/YY">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">CCV Number</label>
+                                            <input type="text" class="form-control" id="ccvNumber">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

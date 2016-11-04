@@ -1,0 +1,117 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "PrivateRoot.cshtml";
+
+    var currentMember = Members.GetCurrentMember();
+    MarketingTools.Models.MemberProfileView member = new MarketingTools.Models.MemberProfileView(currentMember);
+}
+@section pageCss {
+<link rel="stylesheet" type="text/css" href="/css/cube2/compiled/wizard.css">
+<link rel="stylesheet" type="text/css" href="/css/cube2/libs/dropzone.css">
+<link rel="stylesheet" type="text/css" href="/scripts/ng-gallery/ng-image-gallery.css" />
+}
+@section topScripts{
+    <script src="~/Scripts/angular/angular.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/angular/angular-route.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="https://rawgit.com/hammerjs/hammer.js/v2.0.8/hammer.min.js"></script>
+    <script src="~/scripts/ui-bootstrap-tpls-2.0.0.min.js"></script>
+    <script src="~/scripts/ng-gallery/ng-image-gallery.js"></script>
+
+    <script>
+        var app = angular.module('projectsApp', ['thatisuday.ng-image-gallery',
+	        'ngRoute', 'ui.bootstrap'
+        ]);
+
+     app.config(['$routeProvider', function ($routeProvider) {
+         $routeProvider
+             .when("/", {
+                 redirectTo: '/dasboard'
+             })
+         	.when("/dasboard", {
+         	    templateUrl: "/apps/projects/views/dashboard.html",
+         	    controller: "projectsCtrl",
+         	    title: 'Projects'
+         	})
+            .when("/create", {
+                templateUrl: "/apps/projects/views/projectcreate.html",
+                controller: "projectsCtrl",
+                title: 'Create Project'
+            })
+             .when("/detail", {
+                 templateUrl: "/apps/projects/views/projectdetail.html",
+                 controller: "projectsCtrl",
+                 title: 'Project Detail'
+             });
+
+
+     }]);
+
+     app.run(['$location', '$rootScope', function ($location, $rootScope) {
+         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+             $rootScope.title = current.$$route.title;
+         });
+     }]);
+
+     app.filter('toTitleCase', function () {
+         return function (str) {
+             var out = str.replace(/-/g, ' ');
+             
+             return out.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
+         };
+     });
+
+    </script>
+    <script src="~/apps/bucktoolsApiService.js"></script>
+    <script src="~/apps/projects/projectsController.js" type="text/javascript"></script>
+}
+
+<div ng-app="projectsApp" ng-cloak>
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="content-header" class="clearfix">
+				<div class="pull-left">
+					@Umbraco.RenderMacro("Breadcrumbs")
+					<h1>{{title}}</h1>
+				</div>
+				<div class="pull-right hidden-xs">
+					<div class="xs-graph pull-left">
+						<div class="graph-label" style="font-size: 1.2em;">
+							
+						</div>
+						<div class="graph-content spark-orders"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="slide-main-container">
+				<div ng-view autoscroll="true" class="slide-main-animation" ng-init="clientCode = '@member.ClientCode'"></div>
+			</div>
+
+		</div>
+    </div>
+</div>
+@section pageScripts {
+    <script src="/scripts/dropzone.js"></script>
+    <script src="/scripts/wizard.js"></script>
+    <script src="/scripts/jquery.maskedinput.min.js"></script>
+    <script src="/scripts/jquery.pwstrength.js"></script>
+    <script src="/scripts/jquery.magnific-popup.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            console.log('ready');
+
+            $(document).on('finished.fu.wizard', '#myWizard', function (evt, data) {
+                window.location.href = "/projects/";
+            });
+
+        });
+
+    </script>
+
+
+}

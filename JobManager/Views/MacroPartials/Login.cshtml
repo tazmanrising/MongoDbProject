@@ -1,0 +1,64 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+
+@using System.Web.Mvc.Html
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@using Umbraco.Web.Controllers
+
+@{
+    var loginModel = new LoginModel();
+    loginModel.RedirectUrl = "/";
+	
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+    Html.RequiresJs("/umbraco_client/ui/jquery.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.min.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.unobtrusive.min.js");
+}
+
+@* NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed *@
+@Html.RenderJsHere()
+
+@using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin"))
+{
+    <fieldset>
+        
+        @Html.ValidationSummary("loginModel", true)
+
+        <br />
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-user"></i></span>
+	        @Html.TextBoxFor(m => loginModel.Username, new {@class="form-control", placeholder="Email Address" })
+	        @Html.ValidationMessageFor(m => loginModel.Username)
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-key"></i></span>
+	        @Html.PasswordFor(m => loginModel.Password, new {@class="form-control", placeholder="Password" } )
+	        @Html.ValidationMessageFor(m => loginModel.Password)
+		</div>
+
+		<div id="remember-me-wrapper">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="checkbox-nice">
+						<input type="checkbox" id="remember-me" checked="checked" />
+						<label for="remember-me">
+							Remember me
+						</label>
+					</div>
+				</div>
+				<a href="forgot-password-full.html" id="login-forget-link" class="col-xs-6">
+					Forgot password?
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<button type="submit" class="btn btn-success col-xs-12">Login</button>
+			</div>
+		</div>
+		@Html.HiddenFor(m => loginModel.RedirectUrl)
+    </fieldset>  
+}

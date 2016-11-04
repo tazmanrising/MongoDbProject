@@ -1,0 +1,188 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Configuration;
+
+@{
+    Layout = null;
+
+    var portalType = "Project";
+    var jmPath = ConfigurationManager.AppSettings["JobManagerServer"].ToString();
+
+    var startNodeId = Umbraco.Field("applicationRoot", recursive: true);
+    var logoutUrl = Umbraco.Content(Umbraco.Field("portalLogout", recursive: true).ToString()).Url;
+
+    var currentMember = Members.GetCurrentMember();
+    MarketingTools.Models.MemberProfileView member = new MarketingTools.Models.MemberProfileView(currentMember);
+    if (string.IsNullOrEmpty(member.ProfilePicUrl)) { member.ProfilePicUrl = "/images/client.png"; }
+
+    MarketingTools.Models.ClientView company = MarketingTools.JobManager.JobManagerHelpers.GetClientInfo(member.ClientId);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>BUCKAZ Tools - Marketing Tools</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/css/cube2/bootstrap/bootstrap.min.css" />
+
+    <!-- libraries -->
+    <link rel="stylesheet" type="text/css" href="/css/cube2/libs/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="/css/cube2/libs/nanoscroller.css" />
+	
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="/css/cube2/compiled/theme_styles.css" />
+	<link rel="stylesheet" type="text/css" href="/App_Plugins/IconPicker/css/umbraco-icons.css" />
+	<link rel="stylesheet" type="text/css" href="/App_Plugins/IconPicker/css/addon-icons.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/custom.css" />
+
+	@if (CurrentPage.AncestorOrSelf().HasValue("customCSSFile", true))
+{
+	<link rel="stylesheet" type="text/css" href="~/css/@Umbraco.Field("customCSSFile", recursive: true)" />
+}
+	
+    <!-- this page specific styles -->
+    @RenderSection("pageCss", false)
+
+    <!-- Favicon -->
+    <link type="image/x-icon" href="/favicon.png" rel="shortcut icon" />
+    <!-- google font libraries -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="/scripts/html5shiv.js"></script>
+        <script src="/scripts/respond.min.js"></script>
+    <![endif]-->
+
+    @if (company != null)
+    {
+        <script type="text/javascript">
+            sessionStorage.setItem('clientName', '@company.ClientName');
+            sessionStorage.setItem('clientId', '@company.Id');
+            sessionStorage.setItem('clientShortCode', '@company.ClientCode');
+            sessionStorage.setItem('clientLogoUrl', '@company.LogoURL');
+        </script>
+    }
+
+	@RenderSection("topScripts", false)
+</head>
+<body class="@Umbraco.Field("cSSTheme", altText: "theme-white", recursive: true)">
+
+    <!-- Standard Bootstrap Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Logout</h4>
+                </div>
+                <div class="modal-body">
+					@Umbraco.RenderMacro("LoginStatus", new {loginUrl= logoutUrl})
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="theme-wrapper">
+        <header class="navbar" id="header-navbar">
+            <div class="container">
+                <a href="/" id="logo" class="navbar-brand">
+                    <img src="~/Themes/cube2/img/samples/buckaz-mt-logo.png" alt="" class="normal-logo logo-white" />
+                    <img src="/Themes/cube2/img/logo-black.png" alt="" class="normal-logo logo-black" />
+                    <img src="/Themes/cube2/img/logo-small.png" alt="" class="small-logo hidden-xs hidden-sm hidden" />
+                </a>
+                <div class="clearfix">
+                    <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+
+                    <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
+                        <ul class="nav navbar-nav pull-left">
+                            <li>
+                                <a class="btn" id="make-small-nav">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-no-collapse pull-right" id="header-nav">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="dropdown profile-dropdown">
+                                <a href="/profile/">
+                                    <img src="@member.ProfilePicUrl" alt="" />
+                                    <span class="hidden-xs">@member.Name</span>
+                                </a>
+                            </li>
+                            <li class="hidden-xxs">
+                                <a data-toggle="modal" href="#myModal">
+                                    <i class="fa fa-power-off"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="page-wrapper" class="container">
+            <div class="row">
+                <div id="nav-col">
+                    <section id="col-left" class="col-left-nano">
+                        <div id="col-left-inner" class="col-left-nano-content">
+                            <div id="user-left-box" class="clearfix hidden-sm hidden-xs dropdown profile2-dropdown">
+                                <img src='@jmPath@company.LogoURL' />
+                                <div class="user-box">
+                                    <span class="name">
+                                        <a href="#" class="dropdown-toggle" style="font-size: .8em;">
+                                            @company.ClientName
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
+								@Umbraco.RenderMacro("MainNavigation", new {startNodeId=startNodeId, portalType=portalType})
+							</div>
+                        </div>
+                    </section>
+                    <div id="nav-col-submenu"></div>
+                </div>
+                <div id="content-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+							
+                        @RenderBody()
+                            
+                        </div>
+                    </div>
+
+                    <footer id="footer-bar" class="row">
+                        <p id="footer-copyright" class="col-xs-12">
+                            Powered by Cube Theme.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- global scripts -->
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/jquery.nanoscroller.min.js"></script>
+
+    <!-- this page specific scripts -->
+	@RenderSection("pageScripts", false)
+
+    <!-- theme scripts -->
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/pace.min.js"></script>
+
+    <!-- this page specific inline scripts -->
+    @RenderSection("inlineScripts", false)
+</body>
+</html>

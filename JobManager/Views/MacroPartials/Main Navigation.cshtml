@@ -1,0 +1,143 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+
+@*
+    This snippet displays a list of links of the pages immediately under the top-most page in the content tree.
+    This is the home page for a standard website.
+    It also highlights the current active page/section in the navigation with the css class "current".
+*@
+
+@{ 
+	
+	var startNodeId = Model.MacroParameters["startNodeId"];
+	var startNode = Umbraco.Content(startNodeId);
+    var selection = startNode.Children.Where("Visible");
+	
+	@*var selection = CurrentPage.Site().Children.Where("Visible"); *@
+}
+
+<ul class="nav nav-pills nav-stacked">
+	
+	<li class="@(startNode.IsAncestorOrSelf(CurrentPage) ? "active" : null)">
+		<a href="@startNode.Url">
+		<i class="@startNode.pageIcon"></i>
+			<span>@startNode.Name</span>
+		</a>
+	</li>
+						
+    @foreach (var item in selection)
+    {
+		if(item.DocumentTypeAlias == "menuSection"){
+			
+			<li class="nav-header nav-header-first hidden-sm hidden-xs">
+				@item.Name
+			</li>
+		}else{
+			<li class="@(item.IsAncestorOrSelf(CurrentPage) ? "active" : null)">
+            	<a href="@item.Url">
+					<i class="@item.pageIcon"></i>
+					<span>@item.Name</span>
+				</a>
+        	</li>
+		}
+
+    }
+@*
+			<li class="nav-header nav-header-first hidden-sm hidden-xs">
+				For Reference
+			</li>
+				<li>
+				<a href="maps.html">
+				<i class="fa fa-map-marker"></i>
+					<span>Google Maps</span>
+					<span class="label label-danger pull-right">Updated</span>
+						</a>
+						</li>
+						<li>
+						<a href="#" class="dropdown-toggle">
+							<i class="fa fa-file-text-o"></i>
+								<span>Extra pages</span>
+								<i class="fa fa-angle-right drop-icon"></i>
+									</a>
+									<ul class="submenu">
+										<li>
+										<a href="faq.html">
+										FAQ
+										</a>
+										</li>
+										<li>
+										<a href="emails.html">
+										Email Templates
+										</a>
+										</li>
+										<li>
+										<a href="login.html">
+										Login
+										</a>
+										</li>
+										<li>
+										<a href="login-full.html">
+										Login Full
+										</a>
+										</li>
+										<li>
+										<a href="registration.html">
+										Registration
+										</a>
+										</li>
+										<li>
+										<a href="registration-full.html">
+										Registration Full
+										</a>
+										</li>
+										<li>
+										<a href="forgot-password.html">
+										Forgot Password
+										</a>
+										</li>
+										<li>
+										<a href="forgot-password-full.html">
+										Forgot Password Full
+										</a>
+										</li>
+										<li>
+										<a href="lock-screen.html">
+										Lock Screen
+										</a>
+										</li>
+										<li>
+										<a href="lock-screen-full.html">
+										Lock Screen Full
+										</a>
+										</li>
+										<li>
+										<a href="error-404.html">
+										Error 404
+										</a>
+										</li>
+										<li>
+										<a href="error-404-v2.html">
+										Error 404 Nested
+										</a>
+										</li>
+										<li>
+										<a href="error-500.html">
+										Error 500
+										</a>
+										</li>
+										<li>
+										<a href="extra-grid.html">
+										Grid
+										</a>
+										</li>
+										</ul>
+										</li>
+										<li>
+										<a href="/angularjs">
+										<i class="fa fa-google"></i>
+											<span>AngularJS Demo</span>
+											</a>
+											</li>
+*@
+
+</ul>

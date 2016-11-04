@@ -1,0 +1,52 @@
+﻿@Umbraco.Field("backgroundImage")@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "PublicRoot.cshtml";
+	var bgImage = Umbraco.Field("portalBackgroundImage");
+	var forgotPWURL = Umbraco.Content(CurrentPage.portalForgotPassword).Url;
+	var registerURL = Umbraco.Content(CurrentPage.portalRegister).Url;
+    var loginURL = Umbraco.Content(CurrentPage.portalLogin).Url;
+}
+@section topScripts{
+    <script type="text/javascript">
+        localStorage.setItem("loginPage", "@loginURL")
+        console.log(window.location.pathname);
+        console.log(localStorage.getItem("loginPage"));
+    </script>
+}
+
+	<div id="login-full-wrapper" style="background: url(@bgImage) no-repeat left center; background-size: cover;">
+		<div class="pull-right text-center white-bg" style="height:100%">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="login-box">
+						<div id="login-box-holder">
+							<div class="row">
+								<div class="col-xs-12">
+									<header id="login-header">
+                                        <h2>Customer Portal</h2>
+									</header>
+									<div id="login-box-inner">
+										@Umbraco.RenderMacro("Login")
+									
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div id="login-box-footer" class="emerald-bg hidden">
+							<div class="row">
+								<div class="col-xs-12">
+									Do not have an account? 
+									<a href="@registerURL">
+										Register now
+									</a>
+                                    <br />
+                                    @loginURL
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

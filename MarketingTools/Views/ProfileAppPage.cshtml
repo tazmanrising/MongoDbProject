@@ -1,0 +1,80 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "PrivateRoot.cshtml";
+}
+
+@section pageCss {
+<link rel="stylesheet" type="text/css" href="/css/cube2/compiled/wizard.css">
+<link rel="stylesheet" type="text/css" href="/css/cube2/libs/dropzone.css">
+}
+
+@section topScripts{
+    <script src="~/Scripts/angular/angular.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/angular/angular-route.min.js" type="text/javascript"></script>
+    
+
+    <script>
+     var app = angular.module('profileApp', [
+	'ngRoute',
+     ]);
+
+     app.config(['$routeProvider', function ($routeProvider) {
+         $routeProvider
+             .when("/", {
+                 redirectTo: '/edit'
+             })
+         	.when("/edit", {
+         	    templateUrl: "/apps/profile/views/edit.html",
+         	    controller: "mainController",
+         	    title: 'My Profile'
+         	})
+     }]);
+
+     app.run(['$location', '$rootScope', function ($location, $rootScope) {
+         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+             $rootScope.title = current.$$route.title;
+         });
+     }]);
+
+    </script>
+    <script src="~/apps/profile/profileController.js" type="text/javascript"></script>
+}
+
+<div ng-app="profileApp" ng-cloak>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="content-header" class="clearfix">
+                <div class="pull-left">
+                    @Umbraco.RenderMacro("Breadcrumbs")
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="slide-main-container">
+                <div ng-view autoscroll="true" class="slide-main-animation"></div>
+            </div>
+        </div>
+    </div>
+</div>
+@section pageScripts {
+    <script src="/scripts/dropzone.js"></script>
+    <script src="/scripts/wizard.js"></script>
+    <script src="/scripts/jquery.maskedinput.min.js"></script>
+    <script src="/scripts/jquery.pwstrength.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            console.log('ready');
+
+            $(document).on('finished.fu.wizard', '#myWizard', function (evt, data) {
+                console.log('FINISHED!');
+            });
+
+        });
+
+    </script>
+
+
+}

@@ -1,0 +1,384 @@
+﻿<div class="row">
+    <div class="col-lg-12">
+        <div class="main-box clearfix" style="min-height: 820px;">
+            <header class="main-box-header clearfix">
+                <h2>Place your order</h2>
+            </header>
+
+            <div class="main-box-body clearfix">
+
+                <div id="myWizard" class="wizard">
+                    <div class="wizard-inner">
+                        <ul class="steps">
+                            <li data-target="#step1" class="active"><span class="badge badge-primary">1</span>Overview<span class="chevron"></span></li>
+                            <li data-target="#step2"><span class="badge">2</span>Order Info<span class="chevron"></span></li>
+                            <li data-target="#step3"><span class="badge">3</span>Confirmation<span class="chevron"></span></li>
+                            <li data-target="#step4"><span class="badge">4</span>Finish<span class="chevron"></span></li>
+                        </ul>
+                        <div class="actions">
+                            <button type="button" class="btn btn-default btn-mini btn-prev" disabled="disabled"> <i class="icon-arrow-left"></i>Prev</button>
+                            <button type="button" class="btn btn-success btn-mini btn-next" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="step-content">
+                        <div class="step-pane active" id="step1">
+                            <br />
+                            <div class="container">
+                                <div class="row actions">
+                                    <div class="col-xs-4">
+                                        <a href="#/library" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Continue shopping</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        
+                                    </div>
+                                    <div class="col-xs-4">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <table class="table table-bordered table-order">
+                                <thead>
+                                    <tr>
+                                        <th class="hidden-xs col-md-2">&nbsp;</th>
+                                        <th>Description</th>
+                                        <th class="col-md-2">Quantity</th>
+                                        <th class="col-md-2">total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="hidden-xs text-center"><img ng-src="/images/samples/letterhead.jpg" width="75"/></td>
+                                        <td>
+                                            <a href="detail.html">{{order.Title}}</a>
+                                            <p>Letterhead</p>
+                                        </td>
+                                        <td>
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button">
+                                                        <span class="glyphicon glyphicon-minus"></span>
+                                                    </button>
+                                                </span>
+                                                <input type="text" class="form-control" value="500" />
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button">
+                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td align="right">
+                                            <span>&dollar; 100.00 </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" colspan="3">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-xs-4 control-label">shipping: </label>
+                                                        <div class="col-xs-8">
+                                                            <select class="form-control">
+                                                                <option>Ship to Realty Executives Office</option>
+                                                                <option>Ship to Address</option>
+                                                                <option>Pickup - Will Call</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td align="right" colspan="2">
+                                            <span class="label label-success">free</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" colspan="3">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <label class="col-xs-4 control-label">payment: </label>
+                                                        <div class="col-xs-8">
+                                                            <select class="form-control">
+                                                                <option>Credit Card on File</option>
+                                                                <option>Stripe</option>
+                                                                <option>PayPal</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td align="right" colspan="2">
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" colspan="3">total excl. tax:<br>tax:<br>total incl. tax: </td>
+                                        <td align="right" colspan="2">
+                                            <strong>&euro; 100.00</strong><br>
+                                            &dollar; 8.00<br>
+                                            &dollar; 108.00<br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <div class="container">
+                                <div class="row actions">
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> Empty cart</button>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+
+                                    </div>
+                                    <div class="col-xs-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-pane" id="step2">
+                            <br/>
+                            <div class="container">
+                                <div class="row hidden">
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-wizard" data-target="#step1" data-toggle="tab" data-currentStep="1"><span class="glyphicon glyphicon-chevron-left"></span> Back to Overview</button>
+                                    </div>
+                                    <div class="col-xs-4">
+                                       
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-primary btn-wizard pull-right" data-target="#step3" data-toggle="tab" data-currentStep="2">Next - Confirmation <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <form class="form-horizontal well">
+                                        <fieldset>
+                                            <legend>personal info</legend>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companyname">Company name</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companyname" type="text" placeholder="Companyname">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companytradingregister">Register</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companytradingregister" type="text" placeholder="Register">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companytaxregister">Tax number</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companytaxregister" type="text" placeholder="Tax number">
+                                                    <p class="help-block">Tax number required</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companycontact">Contactperson</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companycontact" type="text" placeholder="Contactperson">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companyemail">E-mail address</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companyemail" type="text" placeholder="naam@domein.nl">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <legend>billing address</legend>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companyaddress">Address</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companyaddress" type="text" placeholder="Adres">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companyzip">Zipcode</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companyzip" type="text" placeholder="Zipcode">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companycity">City</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companycity" type="text" placeholder="City">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companycountry">Country</label>
+                                                <div class="col-xs-8">
+                                                    <select class="form-control" id="companycountry">
+                                                        <option>Country 01</option>
+                                                        <option>Country 02</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <legend>shipping address</legend>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companypostaladdress">Address</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companypostaladdress" type="text" placeholder="Address">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companypostalzip">Zipcode</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companypostalzip" type="text" placeholder="Zipcode">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companypostalcity">City</label>
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" id="companypostalcity" type="text" placeholder="City">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-xs-4 control-label" for="companypostalcountry">Country</label>
+                                                <div class="col-xs-8">
+                                                    <select class="form-control" id="companypostalcountry">
+                                                        <option>Country 01</option>
+                                                        <option>Country 02</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <legend>Comments</legend>
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <textarea class="form-control" id="comments" rows="12" maxlength="255"></textarea>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="yes" id="termsandconditions">Yes, I agree to the <a href="#">terms &amp; conditions</a>
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="step-pane" id="step3">
+                            <br />
+                            <div class="container">
+                                <div class="row hidden">
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-default btn-wizard" data-target="#step2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left"></span> Back to Confirmation</button>
+                                    </div>
+                                    <div class="col-xs-4">
+
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-primary btn-wizard pull-right" data-target="#step4" data-toggle="tab">Submit Your Order <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5">
+                                    <div class="well">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Personal info</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        company name<br>
+                                                        contactperson name<br>
+                                                        register: register number<br>
+                                                        tax number: tax number<br>
+                                                        <br>
+                                                        <b>billing address</b><br>
+                                                        address 123<br>
+                                                        zipcode city nl<br>
+                                                        email@example.com<br>
+                                                        <br>
+                                                        <b>Comments</b>
+                                                        <br>
+                                                        <i>Comments are here</i>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Overview</th>
+                                                <th width="50">count</th>
+                                                <th width="70">total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Letterhead</td>
+                                                <td align="center">1</td>
+                                                <td align="right">$ 100.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shipping: Pick Up</td>
+                                                <td align="right" colspan="2">$ 0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Taxes:</td>
+                                                <td align="right" colspan="2">$ 8.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" colspan="3"><strong>$ 108.00</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-pane" id="step4">
+                            <br />
+                            <div class="container">
+                                <div class="row hidden">
+                                    <div class="col-xs-4">
+                                    </div>
+                                    <div class="col-xs-4">
+
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-success pull-right" ng-click="go('/')">Finish <span class="glyphicon glyphicon-check"> </span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <h2>Payment success</h2>
+                                    <p>Your order will be processed as soon as possible.</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <h2>Delivery</h2>
+                                    <p>With express shipping, your order will arrive within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

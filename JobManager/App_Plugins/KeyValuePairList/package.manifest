@@ -1,0 +1,21 @@
+﻿{
+	propertyEditors: [
+		{
+			alias: "KeyValuePairList",
+			name: "Key Value Pair List",
+			editor: {
+				view: "~/App_Plugins/KeyValuePairList/keyvaluepairlist.editor.html",
+				valueType: "JSON"
+			},
+			icon: "icon-thumbnail-list"
+		}
+	],
+
+	javascript: [
+		"~/App_Plugins/KeyValuePairList/keyvaluepairlist.controller.js"
+	],
+
+	css: [
+		"//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css"
+	]
+}

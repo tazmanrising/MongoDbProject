@@ -1,0 +1,23 @@
+﻿ 2016-06-15 00:00:01,080 [P10548/D19/T705] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:49810/umbraco (UmbracoModule request)
+ 2016-06-15 00:00:01,184 [P10548/D19/T705] INFO  umbraco.content - Load Xml from file...
+ 2016-06-15 00:00:01,186 [P10548/D19/T705] INFO  umbraco.content - Loaded Xml from file.
+ 2016-06-15 00:00:01,238 [P10548/D19/T494] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="0" alias="form" application="forms" title="Forms" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.FormTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-06-15 00:00:01,238 [P10548/D19/T494] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="2" alias="datasource" application="forms" title="Datasources" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.DataSourceTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-06-15 00:00:01,238 [P10548/D19/T494] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="3" alias="prevaluesource" application="forms" title="Prevalue sources" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.PreValueSourceTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-06-15 00:00:01,238 [P10548/D19/T494] WARN  Umbraco.Core.Services.ApplicationTreeService - The tree definition: <add initialize="true" sortOrder="3" alias="formsecurity" application="users" title="Forms Security" iconClosed="icon-folder" iconOpen="icon-folder-open" type="Umbraco.Forms.Web.Trees.FormSecurityTreeController, Umbraco.Forms.Web" /> could not be resolved to a .Net object type
+ 2016-06-15 00:00:01,239 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-06-15 00:00:01,239 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-06-15 00:00:01,240 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-06-15 00:00:01,241 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2016-06-15 00:00:03,067 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-06-15 00:00:03,068 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)
+ 2016-06-15 00:00:03,559 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-06-15 00:00:03,560 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2016-06-15 00:00:03,579 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-06-15 00:00:03,579 [P10548/D19/T494] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 0ms)
+ 2016-06-15 00:00:07,175 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-06-15 00:00:07,176 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 0ms)
+ 2016-06-15 00:00:08,075 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+ 2016-06-15 00:00:08,075 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 0 (took 0ms)
+ 2016-06-15 00:00:08,237 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-06-15 00:00:08,237 [P10548/D19/T705] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 0ms)

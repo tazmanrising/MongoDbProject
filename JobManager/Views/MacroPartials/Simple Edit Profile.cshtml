@@ -1,0 +1,54 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+
+@using System.Web.Mvc.Html
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web
+@using Umbraco.Web.Controllers
+
+@{
+    var profileModel = Members.GetCurrentMemberProfileModel();
+
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+    Html.RequiresJs("/umbraco_client/ui/jquery.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.min.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.unobtrusive.min.js");
+
+    var success = TempData["ProfileUpdateSuccess"] != null;
+}
+
+@*NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed*@
+@Html.RenderJsHere()
+
+@if (Members.IsLoggedIn() && profileModel != null)
+{   
+    if (success)
+    {
+        @* This message will show if RedirectOnSucces is set to false (default) *@
+        <p>Profile updated</p>
+    }
+    
+    using (Html.BeginUmbracoForm<UmbProfileController>("HandleUpdateProfile"))
+    {
+        <fieldset>
+       
+            @Html.ValidationSummary("profileModel", true)
+
+            <div class="form-group">
+			@Html.LabelFor(m => profileModel.Name)
+            @Html.TextBoxFor(m => profileModel.Name, 
+    			new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => profileModel.Name)
+            </div>
+			<div class="form-group">
+            @Html.LabelFor(m => profileModel.Email)
+            @Html.TextBoxFor(m => profileModel.Email, 
+    			new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => profileModel.Email)
+            </div>
+
+            <button type="submit" class="btn btn-success pull-right">Save</button>
+        </fieldset>
+    }       
+}

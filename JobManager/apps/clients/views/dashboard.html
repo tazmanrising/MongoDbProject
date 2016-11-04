@@ -1,0 +1,67 @@
+﻿
+<div class="row">
+    <div class="col-lg-12">
+        <div class="main-box clearfix">
+            <div class="main-box-header clearfix hidden">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="clearfix">
+                            <div class="pull-right top-page-ui">
+                                <a href="" class="btn btn-primary pull-right">
+                                    <i class="fa fa-plus-circle fa-lg"></i> Add user
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-box-body clearfix">
+                <div class="table-responsive">
+                    <table class="table user-list table-hover">
+                        <thead>
+                            <tr>
+                                <th><span>Client Name</span></th>
+                                <th><span>Created</span></th>
+                                <th class="text-center"><span>Status</span></th>
+                                <th><span>Email</span></th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="client in clientList">
+                                <td>
+                                    <img ng-src="{{client.LogoURL || '/img/placeholders/company.png'}}"alt="" />
+                                    <a href="#/detail/{{client.Id}}" class="user-link">{{client.ClientName}}</a>
+                                    <span class="user-subhead">{{client.ClientCode}}</span>
+                                </td>
+                                <td>
+                                    2013/08/08
+                                </td>
+                                <td class="text-center">
+                                    <span class="label label-default">Test</span>
+                                </td>
+                                <td>
+                                    <a href="">{{client.ContactEmail}}</a>
+                                </td>
+                                <td style="width: 20%;">
+                                    <a href="" class="table-link green" ng-click="selectClient(client.Id)">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-square fa-stack-2x"></i>
+                                            <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#/detail/{{client.Id}}" class="table-link">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-square fa-stack-2x"></i>
+                                            <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

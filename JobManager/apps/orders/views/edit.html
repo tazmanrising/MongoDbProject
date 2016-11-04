@@ -1,0 +1,212 @@
+﻿<form role="form">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="main-box">
+                <div class="main-box-body-no-header clearfix">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="orderId">Order Id</label>
+                                <input type="text" class="form-control" id="orderId" placeholder="Title" ng-model="formData.OrderId">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="orderTitle">Title</label>
+                                <input type="text" class="form-control" id="orderTitle" placeholder="Order Title" ng-model="formData.Title">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="orderStatus">Status</label>
+                                <button class="form-control label label-info" id="orderStatus">{{formData.Status}}</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="dateCreated">Date Created</label>
+                                <input type="text" class="form-control" id="orderId" placeholder="Title">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="createdBy">Created By</label>
+                                <input type="text" class="form-control" id="orderTitle" placeholder="Order Title">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="dateCreated">Date Accepted</label>
+                                <input type="text" class="form-control" id="orderId" placeholder="Title">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="createdBy">Accepted By</label>
+                                <input type="text" class="form-control" id="orderTitle" placeholder="Order Title">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="dueDate">Due Date</label>
+                                <input type="text" class="form-control" id="dueDate" placeholder="Due Date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="main-box">
+                <header class="main-box-header clearfix">
+                    <h2>
+                        <button class="btn btn-primary pull-right">+ Add Job</button>
+                        Jobs
+                    </h2>
+                </header>
+
+                <div class="main-box-body clearfix">
+                    <div class="table-responsive clearfix">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th><a href=""><span>PO ID</span></a></th>
+                                    <th><a href="" class="asc"><span>Item</span></a></th>
+                                    <th class="text-center"><span>Status</span></th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr class="small">
+                                    <td>
+                                        <a href="">REALEX-123-A</a>
+                                    </td>
+                                    <td>
+                                        <a href="">Online Order - Business Cards</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="label label-success">Orderd</span>
+                                    </td>
+                                    <td class="text-center" style="width: 15%;">
+                                        <a href="" class="table-link">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="main-box">
+                <header class="main-box-header clearfix">
+
+
+                    <h2>
+                        <button class="btn btn-primary pull-right">+ Add Purchase Order</button>
+                        Purchase Orders
+                    </h2>
+                </header>
+                <div class="main-box-body clearfix">
+                    <div class="table-responsive clearfix">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th><a href=""><span>PO ID</span></a></th>
+                                    <th><a href="" class="desc"><span>Vendor</span></a></th>
+                                    <th><a href="" class="asc"><span>Item</span></a></th>
+                                    <th class="text-center"><span>Status</span></th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr class="small">
+                                    <td>
+                                        <a href="">REALEX-123-1</a>
+                                    </td>
+                                    <td>
+                                        BCT
+                                    </td>
+                                    <td>
+                                        <a href="">Business Cards</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="label label-success">Orderd</span>
+                                    </td>
+                                    <td class="text-center" style="width: 15%;">
+                                        <a href="" class="table-link">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="small">
+                                    <td>
+                                        <a href="">REALEX-123-2</a>
+                                    </td>
+                                    <td>
+                                        United
+                                    </td>
+                                    <td>
+                                        <a href="">Contract Folders</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="label label-success">Orderd</span>
+                                    </td>
+                                    <td class="text-center" style="width: 15%;">
+                                        <a href="" class="table-link">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-square fa-stack-2x"></i>
+                                                <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="main-box">
+                <header class="main-box-header clearfix">
+
+
+                    <h2>
+                        Attachments
+                    </h2>
+                </header>
+                <div class="main-box-body clearfix">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+<pre>
+{{result | json}}
+    </pre>

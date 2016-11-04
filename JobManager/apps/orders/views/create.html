@@ -1,0 +1,31 @@
+﻿<div class="main-box">
+    <header class="main-box-header clearfix">
+        <h2>Create New Order for Client</h2>
+    </header>
+
+    <div class="main-box-body clearfix">
+        <form role="form" class="col-md-6">
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input type="text" class="form-control" id="Title" placeholder="Title" ng-model="formData.Title">
+            </div>
+            <div class="form-group">
+                <label for="exampleTextarea">Description</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3" ng-model="formData.Description"></textarea>
+            </div>
+            <div class="checkbox-nice">
+                <input type="checkbox" id="checkbox-1" name="GenerateOrderId" ng-model="formData.GenerateOrderId"/>
+                <label for="checkbox-1">
+                    Generate Order Id
+                </label>
+            </div>
+            <div class="form-group">
+                <a href="" class="btn btn-primary pull-right" ng-click="createOrderJSON();">Create Order</a>
+            </div>
+        </form>
+    </div>
+    <pre>
+{{result | json}}
+    </pre>
+</div>
+

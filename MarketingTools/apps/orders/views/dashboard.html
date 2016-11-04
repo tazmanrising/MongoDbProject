@@ -1,0 +1,70 @@
+﻿<div class="row">
+    <div class="col-lg-12">
+        <div class="main-box clearfix">
+            <header class="main-box-header clearfix">
+                <h2 class="">Recent Orders</h2>
+                <div class="row">
+                    <div class="filter-block pull-left">
+
+                        <a href="#/categories" class="btn btn-primary pull-left">
+                            <i class="fa fa-plus-circle fa-lg"></i> New Order
+                        </a>
+                    </div>
+
+                    <div class="filter-block pull-right">
+                        <div class="form-group pull-left">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <i class="fa fa-search search-icon"></i>
+                        </div>
+                        <a href="#" class="btn btn-primary pull-right">
+                            <i class="fa fa-eye fa-lg"></i> View all orders
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-box-body clearfix">
+                <div class="table-responsive clearfix">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th><a href="#"><span>Order ID</span></a></th>
+                                <th><a href="#" class="desc"><span>Date</span></a></th>
+                                <th><a href="#" class="asc"><span>Description</span></a></th>
+                                <th class="text-center"><span>Status</span></th>
+                                <th class="text-right"><span>Price</span></th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="order in recentOrders">
+                                <td>
+                                    <a href="#/detail">{{order.OrderNumber}}</a>
+                                </td>
+                                <td>
+                                    2013/08/08
+                                </td>
+                                <td>
+                                    <a href="#">{{order.Title}}</a>
+                                </td>
+                                <td class="text-center">
+                                    <span class="label label-default">{{order.Status}}</span>
+                                </td>
+                                <td class="text-right">
+                                    &dollar; 825.50
+                                </td>
+                                <td class="text-center" style="width: 15%;">
+                                    <a href="#" class="table-link">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-square fa-stack-2x"></i>
+                                            <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
